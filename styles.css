@@ -40,7 +40,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    z-index: 1000; /* Layer the modal above other content */
+    z-index: 10000; /* Layer the modal above other content */
     opacity: 0; /* Start hidden */
     transition: opacity 0.5s ease; /* Smooth fade-in */
 }
@@ -57,12 +57,13 @@ body {
 .modal-content {
     position: relative;
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
     max-width: 500px; /* Limit modal width */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
     text-align: center; /* Center the content inside */
+    padding:50px;
 }
 
 /* Close button */
@@ -73,6 +74,13 @@ body {
     font-size: 30px;
     color: #000;
     cursor: pointer;
+}
+
+.form-title{
+  width:80%;
+  text-align:center;
+  margin:auto;
+  margin-bottom:25px;
 }
 
 /* Form labels and inputs styling */
@@ -97,140 +105,156 @@ input {
 input:focus {
     outline: none;
     border-color: #4CAF50; /* Highlight input on focus */
-    box-shadow: 0 0 5px rgba(0, 128, 255, 0.5); /* Subtle glow */
+    box-shadow: 0 0 5px rgba(0, 99,166, 0.5); /* Subtle glow */
 }
 
 /* Submit button styling */
 button.submit-btn {
     width: 100%;
     padding: 12px;
-    background-color: #007bff; /* Blue button */
+    background-color: #455060; /* Blue button */
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    letter-spacing: 0.1em;
 }
 
 button.submit-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #333C47; /* Darker blue on hover */
     transform: scale(1.05); /* Slightly enlarge */
 }
 
 
 /* Hero Section Styles */
 .hero {
-    position: relative;
-    width: 100%; /* Full width */
-    height: 70vh; /* Set the height to 70% of the viewport */
-    background-image: url('/assets/images/hero-image.JPG');
-    background-attachment: fixed;
-    background-size: cover; /* Ensure the image covers the entire container */
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    overflow: hidden; /* Ensures content stays within the section */
-  }
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Default height for larger screens */
+  background-image: url('/assets/images/hero-image.JPG');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* Ensures content stays within the section */
+}
 
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
-    z-index: 1; /* Place it behind the text */
-  }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black overlay */
+  z-index: 1;
+}
 
-  .hero-content {
-    position: relative;
-    z-index: 2; /* Keep the text above the overlay */
-    max-width:1000px;
-    padding:0px 20px;
-  }
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  padding: 20px 10px; /* Add padding for general spacing */
+}
 
-  .hero-content h1 {
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  .hero-content p {
-    font-size: 1.5rem;
-    margin: 30px 0;
-  }
-  
-  .hero-button {
-    display: inline-block;
-    padding: 15px 35px; /* Add padding for the button */
-    font-size: 1rem; /* Adjust font size */
-    color: white; /* White text for contrast */
-    background-color: #0063A6;
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: background-color 0.3s ease-in-out; /* Smooth hover effect */
-    letter-spacing: 0.1em;
-  }
-  
-  .hero-button:hover {
-    background-color: #333C47; /* Darker blue on hover */
-  }
+/* Text Styling */
+.hero-content h1 {
+  font-size: 3rem; /* Large heading for desktop */
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.5rem; /* Default paragraph size for desktop */
+  margin: 30px 0;
+}
+
+/* Button Styling */
+.hero-button {
+  display: inline-block;
+  padding: 15px 35px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0063A6;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+  letter-spacing: 0.1em;
+}
+
+.hero-button:hover {
+  background-color: #333C47;
+}
 
 
   /* Navigation Bar Styles */
   .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     background-color: #455060;
     color: white;
     display: flex;
-    justify-content: space-between; /* Space between logo and links */
+    justify-content: space-between; /* Space between logo and links/hamburger */
     align-items: center;
-    padding: 10px 20px; /* Add some padding for aesthetics */
-    z-index: 1000; /* Ensure it stays on top */
-  }
-  
-  /* Logo Styles */
-  .logo img {
-    height: 40px; /* Adjust logo size as needed */
-  }
-  
-  /* Navigation Links */
-  .navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-  }
+    padding: 10px 20px;
+    z-index: 1000;
+}
 
-  .nav-links {
-    display: flex; /* Keep links in a horizontal row */
-    gap: 10px; /* Add spacing between navigation items */
+.hamburger {
+  display: none; /* Hidden by default on larger screens */
+  cursor: pointer; /* Make it clickable */
+  width: 30px; /* Set the width of the hamburger icon */
+  height: 30px; /* Set the height of the hamburger icon */
+}
+
+.hamburger img {
+  width: 100%; /* Make the image fit its container */
+  height: 100%; /* Maintain aspect ratio within the specified container */
+  object-fit: contain; /* Ensure the image is not cropped or distorted */
+  filter:invert(1);
+}
+
+/* Logo Styling */
+.logo img {
+    height: 40px;
+}
+
+/* Navigation Links (Desktop) */
+.nav-links {
+    display: flex;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .navbar ul li {
+}
+
+.nav-links li {
     margin: 0 15px;
-  }
-  
-  .navbar ul li a {
+}
+
+.nav-links li a {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-  }
-  
-  .navbar ul li a:hover {
+}
+
+.nav-links li a:hover {
     text-decoration: underline;
-  }
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none; /* Hide the hamburger menu by default */
+    cursor: pointer; /* Make it clickable */
+}
 
   /* Awards Section Styles */
   .awards {
@@ -457,7 +481,7 @@ button.submit-btn:hover {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
-    height: 340px; /* Set a fixed height for all boxes */
+    height: 380px; /* Set a fixed height for all boxes */
     text-align: center;
     overflow: hidden; /* Prevent content overflow */
     display: flex; /* Use flexbox for consistent spacing */
@@ -509,6 +533,7 @@ button.submit-btn:hover {
   .product-box p {
     padding: 0px 20px;
     padding-bottom:15px;
+    margin-bottom:20px;
     min-height: 70px;
     display: flex;
     align-items: center; /* Center content vertically within the set height */
@@ -819,6 +844,40 @@ button.submit-btn:hover {
   }
 
   @media screen and (max-width: 768px) {
+
+    .nav-links {
+      display: none; /* Hidden by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 100%; /* Position directly below the navbar */
+        left: 0; /* Align it to the left edge of the screen */
+        width: 100%; /* Make it span the full width of the screen */
+        background-color: #455060; /* Same background as the navbar */
+        padding: 20px 0; /* Add padding inside the rectangle */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        z-index: 999; /* Ensure it is above other elements */
+  }
+  
+  .nav-links li {
+      margin: 10px 0; /* Add spacing between vertical links */
+  }
+
+  .nav-links a {
+    display: block; /* Ensure the links span the full width */
+    padding: 10px 20px; /* Add inner padding for spacing */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* Standard font size */
+    border-radius: 5px; /* Optional: Add slight rounding for aesthetics */
+}
+
+.nav-links a:hover {
+    background-color: #556070; /* Change background on hover */
+}
+  
+  .hamburger {
+      display: block; /* Show the hamburger menu */
+  }
     
     .footer-content {
       flex-direction: column; /* Stack content vertically */
@@ -864,7 +923,7 @@ button.submit-btn:hover {
 
       /* Modal content padding on small screens */
       .modal-content {
-        padding: 15px;
+        padding: 25px;
         width: 90%;
     }
 
@@ -931,39 +990,33 @@ button.submit-btn:hover {
         line-height: 1.4; /* Reduce spacing for a compact look */
         margin-bottom: 10px; /* Slightly reduce spacing between list items */
     }
+
+    /*FOR HERO*/
+    .hero {
+      height: 35vh; /* Reduce height for smaller screens */
+  }
+
+  .hero-content {
+      padding-top: 20px; /* Add padding to avoid overlap with navbar */
+      max-width: 90%; /* Restrict content width */
+  }
+
+  .hero-content h1 {
+      font-size: 2rem; /* Reduce heading size */
+  }
+
+  .hero-content p {
+      font-size: 1rem; /* Reduce paragraph size */
+  }
+
+  .hero-button {
+      padding: 10px 25px; /* Make the button smaller */
+      font-size: 0.9rem; /* Adjust button text size */
+  }
   }
   
 
   @media screen and (max-width: 600px) {
-    .navbar {
-      flex-direction: column; /* Stack logo and nav-links */
-      align-items: center; /* Center items */
-    }
-  
-    .logo {
-      margin-bottom: 10px; /* Add space below the logo */
-    }
-  
-    .nav-links {
-      margin-top: 10px; /* Add space above the links */
-    }
-  
-    .hero {
-      padding: 20px; /* Add padding for better spacing */
-    }
-  
-    .hero-content h1 {
-      font-size: 2rem; /* Adjust text size for smaller screens */
-    }
-  
-    .hero-content p {
-      font-size: 1rem; /* Smaller paragraph text */
-    }
-  
-    .hero-button {
-      font-size: 1rem;
-      padding: 10px 15px; /* Adjust button size */
-    }
 
     .award-images {
         flex-direction: column; /* Stack images vertically */

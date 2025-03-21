@@ -33,3 +33,8 @@ form.addEventListener('submit', (event) => {
   console.log('Telephone:', telephone);
   console.log('Company:', company);
 });
+
+document.querySelector('.hamburger').addEventListener('click', function() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+});
