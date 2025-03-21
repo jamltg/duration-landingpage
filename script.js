@@ -1,6 +1,8 @@
 const popupForm = document.getElementById('popupForm');
 const closeForm = document.getElementById('closeForm');
 const form = popupForm.querySelector('form'); // Select the form inside the modal
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
 // Show the modal on page load
 window.onload = () => {
@@ -34,7 +36,13 @@ form.addEventListener('submit', (event) => {
   console.log('Company:', company);
 });
 
-document.querySelector('.hamburger').addEventListener('click', function() {
-  const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', function () {
   navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+});
+
+// Hide navigation links when the user scrolls
+window.addEventListener('scroll', function () {
+  if (navLinks.style.display === 'flex') {
+    navLinks.style.display = 'none'; // Automatically hide the links on scroll
+  }
 });
