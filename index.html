@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pop-Up Contact Form</title>
+</head>
+<body>
+  <!-- Pop-Up Modal Form -->
+  <div id="popupForm" class="modal">
+    <div class="modal-content">
+        <span id="closeForm" class="close">&times;</span>
+        <form method="POST">
+            <h2>Enter Details to Join our Newsletter and Receive a Discount</h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+            
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="/assets/images/img_logo.png" alt="Logo" />
+    </div>
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--Hero Section -->
+  <div class="hero" id="home">
+    <div class="hero-content">
+      <h1>Premium Aluminium Windows & Doors</h1>
+      <p>Since 1985, Duration Windows has been a trusted UK manufacturer of high-quality aluminium windows and doors. With state-of-the-art facilities in Essex, we deliver innovative, energy-efficient solutions built to last. Explore our range or visit our showroom today.</p>
+      <a href="https://duration.co.uk/index.asp" target="_blank" class="hero-button">Get Started</a>
+    </div>
+  </div>
+
+  <!--Awards Section -->
+  <section class="awards">
+    <h2>Awards & Achievements</h2>
+    <div class="award-images">
+      <img src="/assets/images/award1.jpg" alt="Award 1">
+      <img src="/assets/images/award2.jpg" alt="Award 2">
+      <img src="/assets/images/award3.png" alt="Award 3">
+      <img src="/assets/images/award4.jpg" alt="Award 4">
+      <img src="/assets/images/award5.jpg" alt="Award 5">
+    </div>
+  </section>
+
+  <!--Boxes Section -->
+  <section class="boxes">
+    <!-- Header Section -->
+    <div class="boxes-header">
+      <h2>Why Choose Duration Windows</h2>
+      <p>Choose Duration Windows for industry-leading innovation, in-house product design, and high-quality aluminium solutions tailored to your needs.</p>
+    </div>
+  
+    <!-- Flex Container for Boxes -->
+    <div class="box-container">
+      <div class="box">
+        <img src="/assets/images/icons/quality-icon.png" alt="Uncompromising Quality Logo" class="icon quality-icon">
+        <h3>Uncompromising Quality</h3>
+        <p>All our products are manufactured to the highest industry standards, using premium materials and cutting-edge techniques.</p>
+      </div>
+      <div class="box">
+        <img src="/assets/images/icons/time-icon.png" alt="Swift Lead Times Logo" class="icon time-icon">
+        <h3>Swift Lead Times</h3>
+        <p>With substantial stock levels and local UK production, we ensure quick delivery. Our Fast Track Ordering service is available for urgent orders.</p>
+      </div>
+      <div class="box">
+        <img src="/assets/images/icons/delivery-icon.png" alt="Dependable Deliveries Logo" class="delivery-icon">
+        <h3>Dependable Deliveries</h3>
+        <p>We manage our own fleet of vehicles, ensuring reliable, on-time delivery for all orders.</p>
+      </div>
+    </div>
+    <div class="button-container">
+        <a href="https://duration.co.uk/AboutUs.asp" target="_blank" class="find-out-more-button">Find Out More</a>
+    </div>
+  </section>
+
+  <!--COMMITMENT SECTION-->
+  <section class="commitment-section">
+    <div class="commitment-content">
+        <h2>Our Commitment to Quality and Service</h2>
+        <ul>
+            <li>Duration Windows is a proud family-run business, built on trust and expertise.</li>
+            <li>Established in 1985, we have decades of experience in delivering high-quality glazing solutions.</li>
+            <li>As UK manufacturers, we design and produce our products in-house for superior quality control.</li>
+            <li>We offer a 10-year guarantee, ensuring long-lasting performance and customer confidence.</li>
+            <li>Our fast-track delivery service ensures you receive your products quickly and efficiently.</li>
+        </ul>
+    </div>
+</section>
+
+<!--PRODUCTS SECTION-->
+<section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-container">
+      <div class="product-box">
+        <img src="/assets/images/bifolds.jpg" alt="Bifolds">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Bifolds</h2>
+        <p>Bifolds: Sleek and modern solutions for maximizing your space.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/sliders.jpg" alt="Sliders">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Sliders</h2>
+        <p>Sliders: Effortless sliding doors for elegant transitions.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/roofs.jpg" alt="Roofs">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Roofs</h2>
+        <p>Roofs: Durable and stylish roofing solutions for every need.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/secondary-glazing.jpg" alt="Secondary Glazing">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Secondary Glazing</h2>
+        <p>Secondary Glazing: Efficient energy-saving glazing options.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/modern-range.jpg" alt="Modern Range">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Modern Range</h2>
+        <p>Modern Range: Cutting-edge designs for contemporary architecture.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/internal-screens.jpg" alt="Internal Screens">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Internal Screens</h2>
+        <p>Internal Screens: Seamless dividers for modern interiors.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/sliders.jpg" alt="Vertical Sliders">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Vertical Sliders</h2>
+        <p>Vertical Sliders: Smooth and stylish window solutions.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/commercial.jpg" alt="Commercial">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Commercial</h2>
+        <p>Commercial: Reliable glazing for large-scale projects.</p>
+      </div>
+      <div class="product-box">
+        <img src="/assets/images/curved-designs.jpg" alt="Curved Designs">
+        <div class="overlap-square">
+            <img src="/assets/images/product_logo.png" alt="Company Logo">
+        </div>
+        <h2>Curved Designs</h2>
+        <p>Curved Designs: Shaped and curved solutions for unique aesthetics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2 class="testimonial-title">What Our Clients Say</h2>
+    <div class="testimonial-content">
+      <!-- Big Image on the Left -->
+      <div class="testimonial-image">
+        <img src="/assets/images/testimonials.JPG" alt="Customer Image">
+      </div>
+      <!-- Testimonials Text on the Right -->
+      <div class="testimonial-texts">
+        <div class="testimonial">
+          <p>
+            "Just to let you know that I have fitted the secondary glazing units you supplied to London for me, and they are great. They have cut out a tremendous amount of noise and draughts. Thank you very much for your prompt delivery and the quality of your product."
+          </p>
+          <strong>- L.C.</strong>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Very, very pleased with the secondary double glazing unit. Easy and quick to fit in just a few hours and the acoustic glass has made a HUGE difference to the traffic noise. We sealed the edges (and the trim was stuck on with it too over the top), with 'Everbuild' acoustic sealant which we purchased for a few pounds from an online site. We would not hesitate to order from you again. Always plenty of help and advice available from you too which is reassuring when ordering online."
+          </p>
+          <strong>- K.N.</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--ABOUT US SECTION-->
+  <section class="about-us" id="about">
+    <div class="about-us-content">
+      <div class="about-us-text">
+        <h2>About Us</h2>
+        <p>
+          Founded in 1985, Duration Windows has become one of the UK’s leading manufacturers of premium aluminium windows and doors. Based in Canvey Island, Essex, we specialize in Bi-folding Doors, Secondary Glazing, Sliders, Roofs, and Steel Replacement Windows. With decades of innovation and technical expertise, we’ve built a trusted reputation for exceptional product quality and service.
+        </p>
+        <p>
+          With decades of innovation and technical expertise, we have built a trusted reputation for exceptional product quality, durability, and energy efficiency. Our state-of-the-art 68,000 sq. ft. manufacturing facilities ensure rigorous quality control, fast lead times, and tailored designs to meet diverse customer needs.
+        </p>
+      </div>
+      <div class="about-us-image">
+        <img src="/assets/images/about-us-img.jpg" alt="Duration Windows Facilities">
+      </div>
+    </div>
+</section>
+
+  <!--QUOTE SECTION-->
+  <section class="quote-section">
+    <div class="quote-content">
+      <h2>Get a Quote Today!</h2>
+      <p>
+        For accurate pricing, all quotation requests must be submitted in writing. Trade prices are available with a company letterhead or purchase order. Get in touch today and let us provide you with a tailored quote!
+      </p>
+      <a href="https://www.duration.co.uk/Call-Back-Request.asp?p=About%20Duration%20Windows" class="quote-button" target="_blank">Request a Callback Now</a>
+    </div>
+  </section>
+
+  <section class="stay-connected" id="contact">
+    <h2 class="stay-connected-title">Stay Connected & Informed</h2>
+    <div class='stay-connected-container'>
+        <div class="outer-color-box">
+            <div class="inner-color-box">
+                <div class="icon">
+                    <img src="/assets/images/icons/follow-icon.png" alt="Icon 1">
+                </div>
+                <h3>Follow Us</h3>
+                <p>Stay updated by following us on our social media platforms for the latest news and updates.</p>
+            </div>
+        </div>
+        <div class="outer-color-box">
+            <div class="inner-color-box">
+                <div class="icon">
+                    <img src="/assets/images/icons/newsletter-icon.png" alt="Icon 1">
+                </div>
+                <h3>Join Our Newsletter</h3>
+                <p>Sign up for our newsletter to receive the latest news, updates, and exclusive offers.</p>
+            </div>
+        </div>
+        <div class="outer-color-box">
+            <div class="inner-color-box">
+                <div class="icon">
+                    <img src="/assets/images/icons/contact-icon.png" alt="Icon 1">
+                </div>
+                <h3>Contact Us</h3>
+                <p>Have questions? Reach out to our team anytime, and we’ll be happy to assist you promptly.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+    <!--FOOTER SECTION-->
+    <footer class="footer">
+        <div class="footer-content">
+          <!-- Logo Section -->
+          <div class="footer-logo">
+            <img src="/assets/images/img_logo.png" alt="Duration Windows Logo">
+          </div>
+          <!-- Description Section -->
+          <div class="footer-description">
+            <p>
+              Duration Windows is one of the UK's leading specialist aluminium trade manufacturers. We specialize in aluminium roof lanterns, Bifold Doors and Windows.
+            </p>
+          </div>
+        </div>
+      </footer>
+  <script src="script.js"></script>
+</body>
+</html>
