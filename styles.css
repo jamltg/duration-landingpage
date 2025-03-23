@@ -304,6 +304,10 @@ button.submit-btn:hover {
     background-color: #f3f3f3; /* Light background */
   }
   
+  .duration-highlight {
+    color:#0063A6
+  }
+
   /* Header Section */
   .boxes-header {
     text-align: center; /* Center the title and paragraph */
