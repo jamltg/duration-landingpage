@@ -1007,6 +1007,8 @@ button.submit-btn:hover {
     /*FOR HERO*/
     .hero {
       height: 65vh; /* Reduce height for smaller screens */
+      background-attachment: scroll;
+      background-size: cover;
   }
 
   .hero-content {
