@@ -988,6 +988,11 @@ button.submit-btn:hover {
       display: none; /* Hide the overlap-square on tablets and phones */
     }
 
+    .commitment-section {
+      background-attachment: scroll;
+      background-size: cover;
+    }
+
     .commitment-content {
         padding: 0 15px; /* Add padding to prevent text touching the edges */
         max-width: 90%; /* Constrain the width for readability */
