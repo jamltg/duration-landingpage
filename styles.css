@@ -463,6 +463,14 @@ button.submit-btn:hover {
     color: white;
 }
 
+.popup-container {
+  width:100%;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  padding-top:1rem;
+}
+
 
 
   /* Services Section */

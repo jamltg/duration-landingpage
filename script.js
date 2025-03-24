@@ -46,3 +46,11 @@ window.addEventListener('scroll', function () {
     navLinks.style.display = 'none'; // Automatically hide the links on scroll
   }
 });
+
+// Function to show the popup modal
+const showPopup = () => {
+  popupForm.classList.add('active'); // Display the modal
+};
+
+// Add an event listener to the "Show Popup" button
+document.getElementById('showPopup').addEventListener('click', showPopup);
